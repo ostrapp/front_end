@@ -1,19 +1,14 @@
 import React, { Component } from 'react'
+// CSS
 import './App.css'
-
+// Redux and router
 import { connect } from 'react-redux'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
-import Navigation from './components/navigation/navigation'
-import Login from './routes/login'
-import Buy from './routes/buy'
-import Home from './routes/home'
-import Cart from './routes/cart'
-import register from './routes/register'
-import noMatch from './routes/404'
-
 import { loginCheck } from './actions/simpleAction'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+// Components
+import Navigation from './components/navigation/navigation'
 import PopUp from './components/error/popup'
+import { Home, Buy, Register, Login, Cart, Account, Orders, noMatch } from './routes'
 
 class App extends Component {
   componentDidMount () {
@@ -30,9 +25,13 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/Buy' component={Buy} />
-            <Route path='/Register' component={register} />
+            <Route path='/Register' component={Register} />
             <Route path='/Login' component={Login} />
             <Route path='/cart' component={Cart} />
+            <Route path='/account' component={Account} />
+            <Route path='/orders' component={Orders} />
+            <Route path='/selling' component={Cart} />
+
             <Route component={noMatch} />
           </Switch>
         </div>

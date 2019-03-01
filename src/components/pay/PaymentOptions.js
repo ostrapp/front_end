@@ -6,7 +6,7 @@ class PaymentOptions extends Component {
     let saldo = 20.21
 
     return (
-      <Tabs defaultActiveKey='Saldo' className='bg-dark' id='uncontrolled-tab-example'>
+      <Tabs defaultActiveKey='Saldo' id='uncontrolled-tab-example'>
         <Tab eventKey='Saldo' title={saldo + '€'} disabled={saldo <= 0}>
           <Card>
             <Card.Body>

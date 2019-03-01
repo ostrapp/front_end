@@ -11,7 +11,7 @@ class LogRegister extends Component {
     if (!this.props.loggedIn) {
       return (
         <Col md={4}>
-          <Tabs defaultActiveKey='Login' id='uncontrolled-tab-example' className='bg-info'>
+          <Tabs defaultActiveKey='Login' id='uncontrolled-tab-example'>
             <Tab eventKey='Login' title='Login'>
               <Login />
             </Tab>

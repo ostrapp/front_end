@@ -8,9 +8,7 @@ import {
   Container,
   NavDropdown,
   InputGroup,
-  DropdownButton,
   FormControl,
-  Dropdown
 } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { logout } from '../../actions/simpleAction'
@@ -53,7 +51,7 @@ class Navigation extends Component {
             </LinkContainer>
 
             <InputGroup>
-              <FormControl variant=""/>
+              <FormControl size="md"/>
             </InputGroup>
           </Nav>
 
